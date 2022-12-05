@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const cors = require("cors");
 const dotenv = require("dotenv");
+const jwt = require("jsonwebtoken");
+const passport = require("passport");
+const passportJWT = require("passport-jwt");
 dotenv.config();
 const userService = require("./user-service.js");
 
